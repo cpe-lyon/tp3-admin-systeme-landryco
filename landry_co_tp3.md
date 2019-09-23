@@ -118,3 +118,5 @@ sudo apt install oracle-java11-installer
 ```
 
 2. __Vérifiez qu’un nouveau fichier a été créé dans /etc/apt/sources.list.d. Que contient-il ?__<br>
+
+`linuxuprising-ubuntu-java-disco.list`
