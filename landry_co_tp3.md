@@ -121,3 +121,28 @@ sudo apt install oracle-java12-installer
 2. __Vérifiez qu’un nouveau fichier a été créé dans /etc/apt/sources.list.d. Que contient-il ?__<br>
 
 `linuxuprising-ubuntu-java-disco.list`
+
+# Exercice 7. Création de dépôt personnalisé
+
+
+
+# Exercice 8. Installation d’un logiciel à partir du code source
+
+1. __Commencez par cloner le dépôt git suivant :__<br>
+`git clone https://github.com/jubalh/nudoku`<br>
+Ceci permet de récupérer en local le code source du logiciel nudoku.
+
+2. __Rendez vous dans le dossier nudoku qui vient d’être créé et lancez la commande autoreconf -i (ainsi
+que spécifié dans le fichier README.md). A vous d’installer les éventuels paquets manquants (un
+peu d’aide : pour résoudre le problème de la macro AM_GNU_GETTEXT manquante, installez le paquet
+gettext). Relancez la commande autoreconf -i après chaque paquet installé jusqu’à ce
+qu’elle se termine sans erreur.__<br>
+
+3. __Exécutez le script configure__<br>
+
+4. __Normalement, à cette étape on exécute la commande make install, qui procède à la compilation
+proprement dite et à l’installation (copie des fichiers compilés dans leur dossier de destination). Mais
+dans notre cas, on va demander à checkinstall de s’en charger et de créer un paquet au format .deb :
+sudo checkinstall
+Le logiciel est à présent installé (exécutez nudoku pour vous en assurer) ; on peut vérifier par exemple
+avec aptitude qu’il provient bien du paquet qu’on a créé avec checkinstall.__<br>
