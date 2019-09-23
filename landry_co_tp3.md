@@ -114,7 +114,7 @@ g
 ```
 sudo add-apt-repository ppa:linuxuprising/java
 sudo apt update
-sudo apt install oracle-java11-installer
+sudo apt install oracle-java12-installer
 ```
 
 2. __Vérifiez qu’un nouveau fichier a été créé dans /etc/apt/sources.list.d. Que contient-il ?__<br>
