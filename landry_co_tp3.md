@@ -94,6 +94,7 @@ __Lister les programmes livrés avec coreutils. A quoi sert la commande ’\[’
 retourne ?__<br>
 
 `apt show coreutils`
+\[ est l'équivalent de `test`
 
 # Exercice 5. aptitude
 
