@@ -124,7 +124,19 @@ sudo apt install oracle-java12-installer
 
 # Exercice 7. Création de dépôt personnalisé
 
-
+## Création d’un paquet Debian avec dpkg-deb
+`dpkg-deb: building package 'origine-commande' in 'origine-commande.deb'.`
+NOTA: Dans le fichier control, il faut bien penser à retirer tous les commentaires sinon une erreur de lecture du fichier se pose.
+`pkg-deb: erreur: analyse du fichier « origine-commande/DEBIAN/control » vers la ligne 1:
+ invalid package name in 'Package' field: caractère « # » non autorisé (seuls les lettres, les chiffres et « -+._ » le sont)`
+ 
+ ## Création du dépôt personnel avec reprepro
+ 
+ Bloqué à la question 5 (erreur, no file or directory)
+ 
+ ## Signature du dépôt avec GPG
+ 
+ Réalisé avec succès mais impossible d'installer (voir Création du dépôt personnel avec reprepro)
 
 # Exercice 8. Installation d’un logiciel à partir du code source
 
@@ -137,6 +149,8 @@ que spécifié dans le fichier README.md). A vous d’installer les éventuels p
 peu d’aide : pour résoudre le problème de la macro AM_GNU_GETTEXT manquante, installez le paquet
 gettext). Relancez la commande autoreconf -i après chaque paquet installé jusqu’à ce
 qu’elle se termine sans erreur.__<br>
+
+Même après avoir installé Gettext, la commande `autoreconfig -i` refuse de se lancer car elle ne trouve pas Gettext.
 
 3. __Exécutez le script configure__<br>
 
